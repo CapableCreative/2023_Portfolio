@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="us-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightgallery.css">
+    <link rel="stylesheet" type="text/css" href="./css/cplus.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@200;400&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@200;400&family=Permanent+Marker&display=swap');
+    </style> 
+    <script src="https://kit.fontawesome.com/7403c50f37.js" crossorigin="anonymous" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="./js/i18next.min.js"></script>
+    <script src="./js/welcome.js"></script>
+    <title>Capable + Creative – Excellent UX Design and Front End Development</title>
+</head>
+<body>
+    <nav id="homeNav" class="home-main-navigation">
+        <a href="#" class="hex home-nav-link" onclick="nav('resume')">
+            <span class="dsk-only">Resume</span>
+            <span class="mbl-only">
+                <i class="col fas fa-address-card heading-icon"></i>
+            </span>
+        </a>
+        <a href="#" class="hex home-nav-link" onclick="nav('portfolio')">
+            <span class="dsk-only">Portfolio</span>
+            <span class="mbl-only">
+                <i class="col fas fa-book-open heading-icon"></i>
+            </span>
+        </a>
+        <a href="#" id="ccLogo" class="hex home-nav-link" onclick="nav('welcomeScreen')">
+            <img src="/img/svg/capablecreativeLogo.svg">
+        </a>
+        <a href="#" class="hex home-nav-link" onclick="nav('references')">
+            <span class="dsk-only">References</span>
+            <span class="mbl-only">
+                <i class="col fas fa-thumbs-up heading-icon"></i>
+            </span>
+        </a>
+        <a href="#" class="hex home-nav-link" onclick="nav('connect')">
+            <span class="dsk-only">Let's Talk</span>
+            <span class="mbl-only">
+                <i class="col fas fa-comments heading-icon"></i>
+            </span>
+        </a>
+    </nav>
+    <section id="welcomeScreen" class="home-section active container-fluid">
+        <div class="row">
+            <div id="welcomeScreenContent" class="welcome-content section-content col-md-12">
+                <h1 class="home-section-heading"><span id="welcomeText">Welcome</span><span id="clientNameWelcome" class="client-name" style="display:none;">Generic Client Name</span></h1>
+                <hr>
+                <div class="row home-bio-info">
+                    <div class="col-md-3 col-sm-12">
+                        <img id="homeHeadshot" src="/img/SteveHeadshot.jpg" alt="Stephen Fox, UI/UX Engineer" />
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <div id="homeBioShort">
+                            <h2>I'd like to discuss joining your team.</h2>
+                            <p></p>
+                            <p>I'm Stephen: a UX Specialist since the days of <i>web designers.</i> UX Design is a delicate balance between user expectations, device specifications, and business needs. I'm more than a good designer; <b>I'm a good listener.</b></p>
+                            <p>My career has been built on willingness to compromise and an ability to implement the collective vision of stakeholders.</p>
+                            <div class="btn-row">
+                                <a href="#" class="btn btn-primary" onclick="nav('connect')">Let's Talk</a>
+                                <a href="#" class="btn btn-secondary" onclick="nav('resume')">View Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div id="welcomeScreenBkgrd" class="video-background">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./videos/artsyBkgrdOpt.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+    <section id="resume" class="home-section">
+        <div class="container-fluid">
+            <div class="container section-head-plus">
+                <div class="row">
+                    <i class="col fas fa-address-card heading-icon"></i>
+                    <div class="col heading-text">
+                        <h2 class="section-title resume-section-title">resume</h2>
+                        <h3 class="sub-section-title">Stephen Fox — UX/UI Engineer</h3>
+                        <p>I have 13 years experience <b>bringing creative, data-based solutions</b> to user journeys</b>.
+                        </p>
+                    </div>
+                </div>  
+            </div> 
+        </div>
+        <div class="container-fluid section-body">
+            <div class="container">
+                <div id="services" class="serviceText row">
+                    <div class="col-md-9 jobs resume-section">
+                        <h3 class="summary-title"><i class="fas fa-cogs"></i> experience</h3>
+                        <div class="job">
+                            <p class="job-role">UX/UI Engineer, <span class="employer">Wellview Health</span></p>
+                            <p class="job-dates">March 2020 – December 2022</p>
+                            <ul>
+                                <li>Designed, coded, and maintained modern interfaces for one admin-facing application, and one client-facing application</li>
+                                <li>Created wireframes, comprehensives, front end code, and ongoing support materials for development of Wellview mobile app from Alpha – 2.0 releases</li> 
+                                <li>Led UX and front end development of <i>Daily Well Check</i> COVID-19 web application</li>
+                                <li>Completed all day-to-day front end bug fixes and feature development</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="job">
+                            <p class="job-role">Senior User Experience Manager, <span class="employer">United Methodist Communications</span></p>
+                            <p class="job-dates">May 2017 – March 2020</p>
+                                <ul>
+                                    <li>Translated Marketing and Technology teams business needs into strategically designed landing pages, responsively coded sites, and other ongoing digital campaigns</li>
+                                    <li>Redesigned, streamlined, and responsively-coded the “<a href="https://www.resourceumc.org/en/content/church-marketing-plan-tool" target="_blank">Church Marketing Plan Tool”</a> increasing annual leads from 12 to 500+</li>
+                                    <li>Re-coded front end assets for UMC.org (no longer reflective of my contributions) based on vendor-provided designs</li> 
+                                    <li>Led user interviews, load testing, and user training for new United Methodist Communications web platforms</li>
+                                </ul>
+                            <p></p>
+                        </div>
+                        <div class="job">
+                            <p class="job-role">Creative Director, <span class="employer">Clearly Media</span></p>
+                            <p class="job-dates">March 2009 – May 2017</p>
+                                <ul>
+                                    <li>Designed, coded, and launched 75+ responsive websites and landing pages</li>
+                                    <li>Established code quality, responsive methodologies, and project management standards</li>
+                                    <li>Managed a team of 8 contractors and employees for 2 years while continuing front end development work</li>
+                                    <li>Designed and developed front end for <a href="https://jeremiahstudybible.com/" target="_blank">JeremiahStudyBible.com</a></li>
+                                    <li>Led responsive design, coding, and launch of <a href="https://jesuscalling.com/" target="_blank">JesusCalling.com</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="resume-section"> 
+                            <h3 class="summary-title"><i class="fas fa-laptop-code"></i> skills</h3>   
+                            <div class="job">
+                                <p class="job-role">Web/Mobile App Design</p>
+                                <ul>   
+                                    <li>User Story Development</li>
+                                    <li>User Interviews</li>
+                                    <li>MVP Development</li>
+                                    <li>UX Auditing</li>
+                                    <li>Wireframe Development <i>(Adobe XD, Sketch, InVision)</i></li>
+                                    <li>Comp Development</li>
+                                    <li>Application/UI Interface Design</li>                
+                                </ul>
+                                <p class="job-role">Front End Development</p>
+                                <ul>
+                                    <li>HTML5/CSS</li>
+                                    <li>SASS</li>
+                                    <li>Bootstrap</li>
+                                    <li>JavaScript</li>
+                                    <li>JQuery</li>
+                                    <li>DotNet Razor</li>
+                                </ul>
+                                <p class="job-role">Related Skills</p>
+                                <ul>
+                                    <li>Brand Development</li>
+                                    <li>Graphic Design</li>
+                                    <li>Fine Art</li>
+                                    <li>Digital Illustration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <section id="portfolio" class="home-section">
+        <div class="container-fluid section-body">
+            <div class="container">
+                <div class="row section-head-plus">
+                    <i class="col fas fa-book-open heading-icon"></i>
+                    <div class="col heading-text">
+                        <h2 class="section-title">Portfolio</h2>
+                        <h3 class="sub-section-title">UX + UI + Design + Illustration</h3>
+                    </div>
+                </div> 
+            </div>
+            <div class="row section-heading">
+                <h2>User Interface Design</h2>
+            </div>  
+            <div class="row port-row port-ui">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/dashboard-wt.png" alt="Thumb-3"> 
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/schedule-wt.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/coaches-wt.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/selectTime-wt.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/inbox-wt.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/iPhoneApp/health-wt.png" alt="Thumb-1">
+                <div class="port-link col-lg-12">
+                    <a class="ui-button btn btn-primary" href="https://xd.adobe.com/view/d12421be-ebff-4f2f-b55e-241b294f8fc0-8477/?fullscreen" target="_blank">Interactive Mockups</a>
+                </div>
+            </div>
+            <div class="row section-heading">
+                <h2>Digital Marketing</h2>
+            </div>   
+            <div class="row port-row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 dsk-only">
+                    <div class="port-item port-item-1">
+                        <div class="port-deets">
+                            <img class="port-thumb" src="/img/thumb_jc.jpg" alt="Jesus Calling" />
+                            <div class="port-text">
+                                <h3>Jesus Calling</h3>
+                                <ul class="contributions">
+                                    <li>Creative Direction</li>
+                                    <li>HTML / CSS</li>
+                                    <li>CMS Integration</li>
+                                </ul>
+                                <a href="https://www.jesuscalling.com" target="_blank" class="btn btn-primary port-item-btn"><i class="fas fa-share-square"></i> JesusCalling.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="port-item port-item-3">
+                        <div class="port-deets">
+                            <img class="port-thumb" src="/img/thumb_ss.jpg" alt="Siren's Song" />
+                            <div class="port-text">
+                            <h3>Siren's Song Trilogy</h3>
+                                <ul class="contributions">
+                                    <li>Design</li>
+                                    <li>HTML / CSS / JS</li>
+                                    <li>CMS Integration</li>
+                                </ul>
+                                <a href="http://www.stormsirentrilogy.com/" target="_blank" class="btn btn-primary port-item-btn"><i class="fas fa-share-square"></i> StormSirenTrilogy.com</a>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="port-item port-item-6">
+                        <div class="port-deets">
+                            <img class="port-thumb" src="/img/thumb_jsb.jpg" alt="Jeremiah Study Bible" />
+                            <div class="port-text">
+                                <h3>Jeremiah Study Bible</h3>
+                                <ul class="contributions">
+                                    <li>Design</li>
+                                    <li>HTML / CSS</li>
+                                    <li>Woocommerce</li>
+                                </ul>
+                                <a href="http://www.robertjmorgan.com/" target="_blank" class="btn btn-primary port-item-btn"><i class="fas fa-share-square"></i> RobertJMorgan.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+            <div class="row section-heading">
+                <h2>Traditional Marketing</h2>
+            </div>  
+            <div class="row port-row port-print">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_jy.png" alt="Thumb-3"> 
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_jw.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_savor.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_ms.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_tdf.png" alt="Thumb-4">
+                <img class="img-responsive col-lg-2 col-md-4 col-sm-6" src="./img/thumb_cf2.png" alt="Thumb-1">
+            </div>
+    </section>
+    </section>
+    <section id="references" class="home-section">
+        <div class="container-fluid">
+            <div class="container section-head-plus">
+                <div class="row">
+                    <i class="col fas fa-thumbs-up heading-icon"></i>
+                    <div class="col heading-text">
+                        <h2 class="section-title">references</h2>
+                        <h3 class="sub-section-title">peers <orange>+</orange> teammates</h3>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid section-body">   
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 reference">
+                        <div class="row">
+                            <image class="reference-headshot" src="/img/Brandon.jpg" ></image> 
+                            <div class="col-md-8 refer-copy job">
+                                <h3><b>Brandon Sharp</b><br><i>Former Development Teammate</i></h3>
+                                <p class="job-dates">Software Developer, Claris Health</p>
+                                <p class="job-description">
+                                    "I worked with Stephen for several years, and he consistently delivers what he's asked to do. During this time he worked in the capacity of a front-end developer did QA for our project, and he decided to also pile on a development bootcamp on top of his already considerable daily workload in order to expand his skillset.</p><p> With his artistic background, I have no doubt that his class projects were the best-looking in the class, and he also showed a deep understanding of the software development concepts that were being taught. I'd love to work with him again some day (and sincerely hope it happens)!"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 reference">
+                        <div class="row">
+                            <image class="reference-headshot" src="/img/josh.png" ></image> 
+                            <div class="col-md-8 refer-copy job">
+                                <h3>Josh Rowe<br><i>Former Employer</i></h3>
+                                <p class="job-dates">President / Director of Web Services, Clearly Media</p>
+                                <p class="job-description">
+                                    "Many references are simply the best things someone can conjure up to say about another person as a favor &ndash; <b>this is not one of those references</b>.  It’s truly my pleasure to whole-heartedly recommend Stephen; He is among the elite in terms of his skill as a web / graphic designer, illustrator, writer, and creative director. He’s experienced, versatile, reliable, hard-working (yet funny and fun to work with), and conscientious.  His incredible commitment to doing the best work possible is paralleled by his incredible commitment to doing the right thing &ndash; for clients, and for his co-workers.</p>  
+                                <p>Stephen is of a rare, well-rounded high quality and will always be an asset wherever he works, with whoever employs him quickly realizing they were lucky to snag him."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 reference">
+                        <div class="row">
+                            <image class="reference-headshot" src="/img/mandy.jpg" ></image> 
+                            <div class="col-md-8 refer-copy job">
+                                <h3>Mandy Wilson<br><i>Former Client</i></h3>
+                                <p class="job-dates">Marketing Director, HarperCollins Christian Publishing</p>
+                                <p class="job-description">
+                                    "Stephen is the kind of graphic whiz every marketer needs in their contact list. He can take ideas and concepts and bring them to life in a way that effectively appeals to the target audience. Working with Stephen is a delight from start to finish, but my favorite part is opening his first draft. When I see what he's created, I'm always in awe. No matter the project, you can count on Stephen to deliver high-quality work every time."
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 reference">
+                        <div class="row">
+                            <image class="reference-headshot" src="/img/Brett.png" ></image>  
+                            <div class="col-md-8 refer-copy job">
+                                <h3>Brett McArdle<br><i>Former Team Member</i></h3>
+                                <p class="job-dates">Content Creator and Marketing Manager</p>
+                                <p class="job-description">
+                                    "Stephen had barely joined the company when we threw a large project his way: complete re-development of a customer-facing online marketing resource applicable to United Methodist churches throughout the nation.  This meant stripping away the old version, creating an entirely new wireframe, and crafting a vibrant, engaging design for each page of the resource.
+                                </p>
+                                <p>
+                                    Stephen not only accomplished the task but did so sooner than expected and built a user-friendly interface. The project is known as the Church Marketing Plan Tool and became one of the agency's successes in 2017."
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 reference">
+                        <div class="row">
+                            <image class="reference-headshot" src="/img/mike.png" ></image> 
+                            <div class="col-md-8 refer-copy job">
+                                <h3>Mike McReynolds<br><i>Former Coworker</i></h3>
+                                <p class="job-dates">SEO Specialist</p>
+                                <p class="job-description">
+                                    "Stephen Fox is the most relentlessly creative person I know. He consistently surprises me with the breadth and depth of his artistic and technical knowledge. He and I have worked together on many projects and I have always come away impressed by the work he produces."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="connect" class="home-section">
+        <div class="container-fluid">
+            <div class="container section-head-plus">
+                <div class="row">
+                    <i class="col fas fa-thumbs-up heading-icon"></i>
+                    <div class="col heading-text">
+                        <h2 class="section-title" style="text-align:left;">Let's Talk</h2>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid section-body">
+            <div class="col"> 
+                <a href="https://www.linkedin.com/in/capablecreative/" target="_blank"> 
+                    <img class="linkedin social-icons" src="/img/svg/linkedin.svg" alt="linkedIn"/>
+                </a>
+                <a class="btn btn-primary" id="revealEmail">Display Email</a>
+                <a id="hiddenEmail" style="display:none;" href="mailto:stephen@capablecreative.com">stephen@capablecreative.com</a>
+            </div>
+        </div>
+    </section>
+    <section id="graphicDesignPort" class="home-section">
+        <div class=" section-content">
+            <h1 class="home-section-heading"></h1>
+        </div>
+    </section>
+    <section id="illustrationPort" class="home-section">
+        <div class=" section-content">
+            <h1 class="home-section-heading"></h1>
+        </div>
+    </section>
+    <section id="brandingPort" class="home-section">
+        <div class=" section-content">
+            <h1 class="home-section-heading"></h1>
+        </div>
+    </section>
+    <section id="homeFunnel" class="home-section">
+        <div class=" section-content">
+            <h1 class="home-section-heading"></h1>
+        </div>
+    </section>
+<script>
+    // Primary navigation switch
+function nav(idString){
+    $('.home-section.active').removeClass('active');
+    $('#' + idString).addClass('active');
+}
+$(document).ready(() =>{
+//    let searchParams = new URLSearchParams(window.location.search)
+//    let nameExists = searchParams.has('n')
+//    if(nameExists){
+//        let param = searchParams.get('n')
+//        localStorage.setItem('client', param)
+//    }
+    
+//    $.getJSON("json/clients.json", function(json) {
+
+//    let localClientName = localStorage.getItem('client')
+//    let clientListClient = json.clients
+
+//    let found = $(json).find(e => e.clients == localClientName);
+
+//    let visitorCompany = json.clients[localClientName].name
+    
+//    $("#clientNameWelcome").text(visitorCompany);
+//    $('#clientNameWelcome').fadeIn(1000);
+    $('#revealEmail').on('click', () => {
+        $('#hiddenEmail').fadeToggle();
+    })
+    //TODO ADD CLIENT RECOGNITION
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>

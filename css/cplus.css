@@ -1,0 +1,678 @@
+/* --- Capable + Creative - Primary CSS ----------------------- 
+    + Supporting CSS
+        - Bootstrap 4.0 (flex-based)
+        - Normalize CSS (browser user agent sheets reset)
+    + Font families (add via SASS later)
+        - BODY: font-family: 'Helvetica Neue', arial, helvetica, sans-serif;
+        - HEADERS: font-family: 'Helvetica Neue', 'Helvetica Neue', arial, helvetica, sans-serif;
+    + Colors
+        - C+C Red: #ED3B27
+        - C+C Blue: 
+------------------------------------------------------------ */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    justify-content: space-around;
+    position: relative;
+    background: #212125;
+    color: #FFF;
+}
+a {
+    color: #46C1E4;
+}
+p, ul, li, ol, blockquote{
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+}
+h1 {
+    font-family: 'Permanent Marker', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+h2 {
+    font-family: 'Permanent Marker', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #46C1E4;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+section .container {
+    padding: 20px;
+}
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+section {
+    padding-bottom: 80px;
+}
+
+/* =========================================================
+-------- Buttons -------------------------------------------
+========================================================= */
+.btn {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 50px;
+    line-height: 40px;
+    padding: 10px 40px;
+}
+.btn.btn-primary:not(.port-item-btn) {
+    background-color: #F18A1E;
+    border: 2px solid #F18A1E;
+    max-width: 500px;
+}
+.btn.btn-secondary {
+    background: transparent;
+    color: #46C1E4;
+    border: 2px solid #46C1E4;
+}
+.btn-row .btn.btn-primary {
+    border-radius: 50px 0 0 50px;
+}
+.btn-row .btn.btn-secondary {
+    border-radius: 0 50px 50px 0;
+}
+
+/* =========================================================
+-------- Bootstrap Overrides -------------------------------
+========================================================= */
+.container {
+    max-width: 1800px;
+}
+
+/* =========================================================
+-------- ALL SECTIONS --------------------------------------
+========================================================= */
+.section-body > .row {
+    padding: 40px 80px;
+}
+
+.section-heading h2 {
+    text-transform: uppercase;
+    line-height: 3rem;
+    padding: 0 0;
+    margin:  0 auto;
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+}
+
+/* =========================================================
+-------- Home Sections -------------------------------------
+========================================================= */
+.home-section {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 100vh;
+    width: 100%;
+    flex-basis: 100%;
+    position: absolute;
+    top: -100vh;
+    overflow: hidden;
+}
+.home-section.active:not(#welcomeScreen) .container-fluid.section-body{
+    background: url('../img/artsyBkgrd.jpg') no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.home-section.active {
+    display: flex;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 0;
+    left: 0;
+    overflow:initial;
+}
+.home-section:not(#welcomeScreen), .home-section:not(#welcomeScreen) .row{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.home-section:not(#welcomeScreen) .section-body {
+    padding-bottom: 120px !important;
+}
+.section-content {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+.home-section h1 {
+    color: #FFF;
+    font-size: 12rem;
+    font-weight: 300;
+    line-height: 10rem;
+    text-align: center;
+    margin: 0 auto 40px;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    padding-top: calc(20vh);
+}
+.home-section h1 #welcomeText {
+    background-color: #693665;
+    background-image: linear-gradient(45deg, #693665, #44cbed);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-family: 'Permanent Marker';
+    font-size: 375px;
+    letter-spacing: -35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 50px;
+}
+.home-section h1 #clientNameWelcome {
+    font-weight: 700;
+    letter-spacing: -10px;
+    opacity: 1;
+    text-transform: unset;
+    display: block;
+    font-family: 'Montserrat';
+}
+.section-head-plus {
+    margin: 75px auto 30px;
+    height: fit-content;
+    max-height: 270px;
+    background: url(../img/svg/brushBorder.png) center bottom no-repeat;
+    background-size: contain;
+}
+.section-head-plus i.heading-icon {
+    font-size: 6rem;
+    padding: 0 20px 10px 40px;
+    max-width: fit-content;
+  }
+  #homeHeadshot {
+    -webkit-mask-image: url(../img/svg/brushStroke.svg);
+   mask-image: url(../img/svg/brushStroke.svg);
+   mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    margin: 0 0 0 auto;
+}
+.home-bio-info .col-md-3 {
+    display: flex;
+  }
+.home-bio-info .col-md-3 img {
+    justify-self: center;
+    align-self: center;
+}
+
+/* - Welcome Section ------------------------------ */
+
+#welcomeScreen #welcomeScreenContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#welcomeScreenBkgrd {
+    height: 100vh;
+    object-fit: fill;
+    overflow: hidden;
+}
+#myVideo {
+    overflow-x: hidden;
+    max-width: 100%;
+    -webkit-mask-image: linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 44%, transparent 95%);
+    mask-image: linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 52%, rgba(0, 0, 0, 1) 44%, transparent 95%);
+}
+#welcomeScreen #welcomeScreenBkgrd video {
+    opacity: 0.5;
+    z-index: 1;
+    overflow: hidden;
+    transform: scale(1);
+    filter: blur(10px);
+    background: url(../img/hexBkgrdStatic.jpg) center center no-repeat;
+    background-size: cover;
+}
+#welcomeScreenContent p, #welcomeScreenContent {
+    color: #FFF;
+}
+#homeBioShort {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+}
+#homeBioShort p {
+    font-size: 20px;
+}
+#welcomeScreen .btn-row {
+    margin-bottom: 100px
+}
+
+/* -- REFERENCES SECTION -------------------------- */
+.section-head-plus {
+    padding: 20px 0;
+}  
+.section-head-plus .section-title{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.section-head-plus h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.reference-headshot {
+    width:200px;
+    height: 200px;
+    -webkit-mask-image: url(../img/svg/brushStroke.svg);
+    mask-image: url(../img/svg/brushStroke.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+}
+.svg-mask.col {
+    max-width: 240px;
+}
+#references .reference {
+    padding: 20px;
+  }
+  #references .reference .refer-copy {
+    font-size: 14px;
+  }
+  #references .reference .refer-copy p {
+    font-size: 16px;
+  }
+  
+  .col.svg-mask {
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+  }
+
+/* -- Resume Section ------------------------------ */
+#services h3 {
+    color: #46C1E4;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFF;
+  }
+  .job-role {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .job-dates {
+    font-style: italic;
+    color: rgba(255,255,255,0.7);
+    margin: 0 0;
+  }
+  .resume-section.jobs {
+    margin-bottom: 40px;
+  }
+/* -- Portfolio Section --------------------------- */
+.ui-button {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.row.port-row {
+    margin: 0 0 80px 0;
+    padding: 0 0;
+    justify-content: space-around;
+}
+.row.port-row > div {
+    padding: 0 0;
+    margin: 0 0;
+}
+.row.port-row img.port-thumb {
+    width: 100%;
+}
+.port-row > div {
+    background: #fafafa;
+}
+.port-row img.port-thumb {
+    background: #000;
+}
+.port-row > div:nth-child(odd){
+    background: #eaeaea;
+}
+.port-row > div:nth-child(odd) .port-item-btn{
+    background: #308ea8;
+}
+.port-text {
+  color: #333;
+  padding: 20px;
+}
+.port-text ul {
+  list-style: none;
+  display: flex;
+  width:fit-content;
+  padding: 0 0;
+  color: #333;
+}
+.port-text ul li {
+  padding: 5px; border: 1px solid #333;
+  border-radius: 3px;
+  margin: 5px;
+}
+.port-text {
+    position: relative;
+}
+.port-item {
+    padding-bottom: 50px;
+}
+.port-item-btn {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    line-height: 60px;
+}
+.port-print > img {
+    padding: 0 0;
+    height:-moz-available;
+    display: flex;
+    align-self: center;
+}
+.port-ui > img {
+margin: 20px 0;
+max-width: 425px;
+}
+.port-ui .btn.btn-primary {
+margin: 9px auto;
+display: block;
+}
+ul.contributions li {
+    font-size: 10px;
+}
+.port-link {
+    background: none !important;
+}
+
+/* -- Let's talk Section -------------------------- */
+#connect {
+    text-align: center;
+}
+#revealEmail {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#hiddenEmail {
+    display: block;
+    line-height: 6rem;
+    font-size: 1.5rem;
+    color: #FFF;
+}
+.social-icons {
+    width: 50px;
+    margin: 20px;
+}
+
+/* ===================================================
+---- Hexagon Navigation ------------------------------
+=================================================== */
+
+.hex {
+    width: 150px;
+    line-height: 30px;
+    color: #F18A1E;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all .5s ease .125s;
+  }
+  .hex:not(.active-nav) {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .hex:not(.active-nav):after {
+    content: '';
+    height: 3px;
+    width: 0;
+    margin-top: 5px;
+    background: #46C1E4;
+    transition: all .25s ease .125s;
+  }
+  .hex:not(.active-nav):hover:after {
+    width: 100%;
+    background: #46C1E4;
+    transition: all .25s ease .125s;
+  }
+  .hex:hover, .hex.active-nav {
+    height: auto;
+    color: #FFF;
+    text-decoration: none;
+    transition: all .5s ease .125s;
+  }
+  .hex:hover:not(.active-nav) {
+    transition: all .5s ease .125s;
+  }
+  .hex.active-nav {
+    max-height: 70px;
+    background: transparent;
+    -webkit-clip-path: none;
+    clip-path: none;
+    opacity: 1.0;
+  }
+  .home-main-navigation {
+      display: flex;
+      flex-basis: 100%;
+      width: 100%;
+      justify-content:space-evenly;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      z-index: 9;
+      background:rgba(0, 0, 0, 0.8);
+  }
+  #ccLogo {
+    max-width: 130px;
+  }
+  @media screen and (min-width: 990px) {
+    .mbl-only {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 1870px) {
+    .home-section h1 #welcomeText {
+        font-size: 200px;
+        letter-spacing: -20px;
+    }
+    .home-section h1 #clientNameWelcome {
+        font-size: 145px !important;
+        line-height: 140px;
+    }
+    p, ul, li, ol, blockquote{
+        font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    .home-section h1 #clientNameWelcome {
+        font-size: 115px !important;
+        line-height: 120px;
+    }
+    p, ul, li, ol, blockquote{
+        font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    #welcomeScreen.home-section {
+        min-height:100vh;
+    }
+    .home-main-navigation {
+        top: initial;
+        bottom: 0;
+    }
+    .mbl-only {
+        display: initial;
+    }
+    .dsk-only {
+        display: none !important;
+    }
+    .section-head-plus .section-title {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .section-head-plus i.heading-icon {
+        font-size: 4rem;
+    }
+    .section-heading h2 {
+        font-size: 1.5rem;
+    }
+    .section-body > .row {
+        padding: 30px 0;
+    }
+    .home-section h1 #welcomeText {
+        font-size: 130px;
+        letter-spacing: -5px;
+    }
+    .home-section h1 #clientNameWelcome {
+        font-size: 75px !important;
+        line-height: 80px;
+        letter-spacing: -5px;
+    }
+    p, ul, li, ol, blockquote{
+        font-size: 14px;
+    }
+    #homeHeadshot {
+        margin: 0 auto;
+        display: block;
+    }
+    .home-section h1 {
+        padding-top: 80px;
+    }
+    .home-nav-link i.fas {
+        font-size: 40px;
+        color: #46c1e4;
+        padding-top: 10px;
+    }
+    .section-head-plus {
+        margin: 10px auto 30px;
+    }
+  }
+
+@media screen and (max-width: 767px){
+    .row.port-row {
+        padding: 0 0 30px;
+    }
+    #homeBioShort {
+        text-align: center;
+    }
+    .home-section h1 #welcomeText {
+        font-size: 100px;
+        letter-spacing: -5px;
+    }
+    .home-section h1 #clientNameWelcome {
+        font-size: 50px !important;
+        letter-spacing: 0;
+    }       
+    .section-heading {
+        padding: 10px 10px !important;
+    }
+    .section-head-plus i.heading-icon {
+        display: none;
+    }
+    #references .reference .refer-copy {
+        border-left: none;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #homeHeadshot {
+        max-width: 300px;
+    }
+    .home-section h1 {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .home-section h1 #welcomeText {
+        font-size: 80px;
+        letter-spacing: -5px;
+        padding: 0 7px;
+    }
+    .home-section h1 #clientNameWelcome {
+        font-size: 40px !important;
+        letter-spacing: 0;
+    }       
+}
+
+@media screen and (max-width: 468px){
+    .home-section h1 #welcomeText {
+        font-size: 60px;
+        letter-spacing: -5px;
+        padding: 0 7px;
+    }
+    .home-section h1 #clientNameWelcome {
+        font-size: 30px !important;
+        letter-spacing: 0;
+    }       
+    .section-heading {
+        padding: 10px 10px !important;
+    }
+    .section-head-plus i.heading-icon {
+        display: none;
+    }
+    #references .reference .refer-copy {
+        border-left: none;
+    }
+    .home-section h1 {
+        line-height: 3rem;
+        margin-bottom: 0;
+        margin-top: -25px;
+    }
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #homeHeadshot {
+        max-width: 160px;
+    }
+    #homeBioShort {
+        padding: 10px 0;
+    }
+    .home-section h1 #clientNameWelcome {
+        line-height: 40px;
+    }
+    .home-nav-link i.fas {
+        font-size: 30px;
+    }
+    #homeBioShort p {
+        font-size: 16px;
+    }
+    .btn-row .btn {
+        padding: 10px;
+    }
+}
